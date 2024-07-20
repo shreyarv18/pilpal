@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    
+     
+    color: #a4dfff; 
+    transition: background 0.3s ease-in-out; 
+    overflow-x: hidden; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #E69A8DFF; 
+    animation: fadeIn 2s ease-in-out;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color:#22577a; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px;
+    color: #fff; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    animation: slideIn 1s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #f9f6f6;
+}
+
+input, select, button {
+    margin-bottom: 15px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #80ed99; 
+    box-shadow: 0 0 8px rgba(255, 219, 77, 0.4); 
+}
+
+button {
+    background-color: #80ed99; 
+    color: #222; 
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    animation: pulse 2s infinite;
+}
+
+button:hover {
+    background-color: rgb(241, 148, 131); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-2px); 
+}
+
+button:active {
+    background-color: rgb(239, 125, 105); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
+    transform: translateY(0); 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
